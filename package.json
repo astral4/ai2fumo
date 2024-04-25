@@ -1,0 +1,12 @@
+{
+  "name": "ai2fumo",
+  "version": "0.0.0",
+  "description": "Browser extension that replaces webpage mentions of AI with Fumo",
+  "scripts": {
+    "test": "echo \"test\" && exit 1"
+  },
+  "author": "Kyle Chen",
+  "license": "MIT",
+  "private": true,
+  "type": "module"
+}
