@@ -2,57 +2,39 @@ function capitalize(text) {
     return text.charAt(0).toUpperCase() + text.substring(1);
 }
 
-// Add matches for capitalized and pluralized versions of terms
-function augmentTerms(terms) {
-    for (const [term, replacement] of Object.entries(terms)) {
-        const capTerm = capitalize(term);
-        const capReplacement = capitalize(replacement);
-
-        terms[term + "s"] = replacement + "s";
-
-        if (term !== capTerm) {
-            terms[capTerm] = capReplacement;
-            terms[capTerm + "s"] = capReplacement + "s";
-        }
-    }
-}
-
 let terms = {
     "AI": "Fumo",
-    " AI": " fumo",
-    "[\.] AI": "",
-    "an AI": "a fumo",
-    "artificial intelligence": "fumo",
+    "an AI": "a Fumo",
+    "artificial intelligence": "Fumo",
     "Artificial Intelligence": "Fumo",
     "ML": "Fumo",
-    " ML": " fumo",
-    "[\.] ML": "",
-    "an ML": "a fumo",
-    "machine learning": "fumo",
+    "an ML": "a Fumo",
+    "machine learning": "Fumo",
     "Machine Learning": "Fumo",
     "transformer": "transfumo",
     "LLM": "LLF",
-    "language model": "language fumo",
+    "language model": "language Fumo",
     "Language Model": "Language Fumo",
     "chatbot": "fumobot",
     "ChatGPT": "ChatFumo",
     "OpenAI": "FumoCorp",
-    "Anthropic": "FumoCorp",
+    "Anthropic": "FumoCo",
     "AGI": "Cirno",
     "artificial general intelligence": "Cirno",
 };
 
-// Characters like `.` need to be escaped because they have special meaning in regexes.
-// However, doing this for a regex makes its text representation different from the text it matches,
-// so its entry in `terms` cannot be used for lookups during text replacement.
-// To handle this, we use another map where the keys are the actual matched text of these regexes.
-let backupMatches = {
-    ". AI": ". Fumo",
-    ". ML": ". Fumo",
-};
+// Add matches for capitalized and pluralized versions of terms
+for (const [term, replacement] of Object.entries(terms)) {
+    const capTerm = capitalize(term);
+    const capReplacement = capitalize(replacement);
 
-augmentTerms(terms);
-augmentTerms(backupMatches);
+    terms[term + "s"] = replacement + "s";
+
+    if (term !== capTerm) {
+        terms[capTerm] = capReplacement;
+        terms[capTerm + "s"] = capReplacement + "s";
+    }
+}
 
 const regex = new RegExp(Object.keys(terms).join("|"), "g");
 
@@ -63,6 +45,6 @@ while (walker.nextNode()) {
 
     // Don't substitute text in input boxes
     if (!node.parentNode.isContentEditable) {
-        node.textContent = node.textContent.replace(regex, (match) => terms[match] ?? backupMatches[match]);
+        node.textContent = node.textContent.replace(regex, (match) => terms[match]);
     }
 }
