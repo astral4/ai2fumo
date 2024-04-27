@@ -27,12 +27,13 @@ let terms = {
 
 // Add matches for capitalized and pluralized versions of terms
 for (const [term, replacement] of Object.entries(terms)) {
-    const capTerm = capitalize(term);
-    const capReplacement = capitalize(replacement);
-
     terms[term + "s"] = replacement + "s";
 
+    const capTerm = capitalize(term);
+
     if (term !== capTerm) {
+        const capReplacement = capitalize(replacement);
+
         terms[capTerm] = capReplacement;
         terms[capTerm + "s"] = capReplacement + "s";
     }
