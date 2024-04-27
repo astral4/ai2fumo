@@ -4,13 +4,15 @@ function capitalize(text) {
 
 let terms = {
     "AI": "Fumo",
-    "an AI": "a Fumo",
     "artificial intelligence": "Fumo",
     "Artificial Intelligence": "Fumo",
+    "an AI": "a Fumo",
+    "an artificial intelligence": "a Fumo",
+    "an Artificial Intelligence": "a Fumo",
     "ML": "Fumo",
-    "an ML": "a Fumo",
     "machine learning": "Fumo",
     "Machine Learning": "Fumo",
+    "an ML": "a Fumo",
     "transformer": "transfumo",
     "LLM": "LLF",
     "language model": "language Fumo",
