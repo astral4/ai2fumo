@@ -3,6 +3,7 @@
     "name": "AI2Fumo",
     "description": "Browser extension that replaces webpage mentions of AI with Fumo",
     "version": "0.1.0",
+    "homepage_url": "https://github.com/astral4/ai2fumo",
     "icons": {
         "16": "icons/icon-16.png",
         "32": "icons/icon-32.png",
