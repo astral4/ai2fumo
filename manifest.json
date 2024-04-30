@@ -18,5 +18,10 @@
                 "<all_urls>"
             ]
         }
-    ]
+    ],
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "ai2fumo@kc.dev"
+        }
+    }
 }
