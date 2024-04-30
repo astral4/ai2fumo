@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./images/banner.gif" alt="">
+    <img src="./media/banner.gif" alt="">
 </p>
 
 ![](https://img.shields.io/badge/version-0.1.0-blue) [![](https://img.shields.io/badge/install%20on-Firefox-orange)](https://duckduckgo.com) [![](https://img.shields.io/badge/license-MIT-skyblue)](./LICENSE) ![](https://img.shields.io/badge/fumo-fumo-teal)
@@ -10,8 +10,8 @@ AI2Fumo is a simple browser extension that replaces webpage mentions of AI with 
 
 ## Examples
 
-![A screenshot of a transformed Bloomberg news article](./images/bloomberg-fumo.png)
-![A screenshot of the transformed Google AI website](./images/google-fumo.png)
+![A screenshot of a transformed Bloomberg news article](./media/bloomberg-fumo.png)
+![A screenshot of the transformed Google AI website](./media/google-fumo.png)
 
 ## Install on Chrome
 
