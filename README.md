@@ -1,6 +1,10 @@
-# AI2Fumo
+<p align="center">
+    <img src="./images/banner.gif" alt="">
+</p>
 
 ![](https://img.shields.io/badge/version-0.1.0-blue) [![](https://img.shields.io/badge/install%20on-Firefox-orange)](https://duckduckgo.com) [![](https://img.shields.io/badge/license-MIT-skyblue)](./LICENSE) ![](https://img.shields.io/badge/fumo-fumo-teal)
+
+## Introduction
 
 AI2Fumo is a simple browser extension that replaces webpage mentions of AI with Fumo. Do you feel the web has too much AI and not enough Fumo? AI2Fumo helps you achieve a more balanced browsing experience.
 
