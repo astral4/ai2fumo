@@ -23,8 +23,8 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "ai2fumo@kc.dev",
-            "strict_min_version": "51"
+            "strict_min_version": "109.0"
         }
     },
-    "minimum_chrome_version": "54"
+    "minimum_chrome_version": "88"
 }
