@@ -26,7 +26,7 @@ You can install AI2Fumo on Chrome as an unpacked extension.
 
 You can install AI2Fumo on Firefox [here](https://addons.mozilla.org/en-US/firefox/addon/ai2fumo/) via addons.mozilla.org.
 
-Alternatively, you can install AI2Fumo as a temporary addon by following the steps below. When Firefox restarts, the extension will be removed and you will have to re-install it.
+Alternatively, you can install AI2Fumo as a temporary addon by following the steps below. You will have to reinstall the extension every time Firefox restarts.
 
 1. Download this project (either as ZIP or via `git clone`).
 2. Zip the `src/` directory/folder. (Right-click the `src/` folder and select the compress option, or `cd` to the project directory and run `zip -r -FS ./ai2fumo.zip src/`.)
