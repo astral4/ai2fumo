@@ -2,7 +2,7 @@
     <img src="./media/banner.gif" alt="">
 </p>
 
-![](https://img.shields.io/badge/version-0.1.0-blue) [![](https://img.shields.io/badge/install%20on-Firefox-orange)](https://addons.mozilla.org/en-US/firefox/addon/ai2fumo/) [![](https://img.shields.io/badge/license-MIT-skyblue)](./LICENSE) ![](https://img.shields.io/badge/fumo-fumo-teal)
+![](https://img.shields.io/badge/version-0.1.0-13ADC7) [![](https://img.shields.io/badge/install%20on-Chrome-4285F4?logo=googlechrome)](#install-on-chrome) [![](https://img.shields.io/badge/install%20on-Firefox-FF7139?logo=firefox)](https://addons.mozilla.org/en-US/firefox/addon/ai2fumo/) [![](https://img.shields.io/badge/license-MIT-skyblue)](./LICENSE) ![](https://img.shields.io/badge/fumo-fumo-teal)
 
 ## Introduction
 
