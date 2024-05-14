@@ -2,10 +2,13 @@ function capitalize(text) {
     return text.charAt(0).toUpperCase() + text.substring(1);
 }
 
-const { body } = document;
+(async () => {
+    const { body } = document;
+    if (!body) return;
 
-if (body) {
-    let terms = {
+    const settings = await browser.storage.sync.get();
+
+    let terms = Object.assign({
         "AI": "Fumo",
         "artificial intelligence": "Fumo",
         "Artificial Intelligence": "Fumo",
@@ -26,7 +29,7 @@ if (body) {
         "Anthropic": "FumoCo",
         "AGI": "Cirno",
         "artificial general intelligence": "Cirno",
-    };
+    }, settings.more_fumo && JSON.parse(settings.more_fumo));
 
     // Add matches for capitalized and pluralized versions of terms
     for (const [term, replacement] of Object.entries(terms)) {
@@ -54,4 +57,4 @@ if (body) {
             node.textContent = node.textContent.replace(regex, (match) => terms[match]);
         }
     }
-}
+})();

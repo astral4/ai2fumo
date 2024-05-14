@@ -26,5 +26,11 @@
             "strict_min_version": "109.0"
         }
     },
+    "permissions": [
+        "storage"
+    ],
+    "options_ui": {
+        "page": "settings.html"
+    },
     "minimum_chrome_version": "88"
 }
