@@ -24,8 +24,14 @@ if (body) {
         "ChatGPT": "ChatFumo",
         "OpenAI": "FumoCorp",
         "Anthropic": "FumoCo",
+        "Google": "Gofumo",
+        "Microsoft": "Microfumo",
         "AGI": "Cirno",
         "artificial general intelligence": "Cirno",
+        "Artificial General Intelligence": "Cirno",
+        "GPT": "Fumo",
+        "Gemini": "Fumomi",
+        "Stable Diffusion": "Stable Diffumo",
     };
 
     // Add matches for capitalized and pluralized versions of terms
