@@ -20,7 +20,7 @@ You can install AI2Fumo on Chrome as an unpacked extension.
 1. Download this project (either as ZIP or via `git clone`).
 2. Go to `chrome://extensions` via the address bar.
 3. Enable developer mode if it hasn't already been enabled.
-4. Click "Load unpacked". Chrome will prompt you for a specific directory/folder. Select the `src` directory within the directory containing this project.
+4. Click "Load unpacked". Chrome will prompt you for a specific directory. Select the `src/` directory.
 
 ## Install on Firefox
 
@@ -29,9 +29,8 @@ You can install AI2Fumo on Firefox [here](https://addons.mozilla.org/en-US/firef
 Alternatively, you can install AI2Fumo as a temporary addon by following the steps below. You will have to reinstall the extension every time Firefox restarts.
 
 1. Download this project (either as ZIP or via `git clone`).
-2. Zip the `src/` directory/folder. (Right-click the `src/` folder and select the compress option, or `cd` to the project directory and run `zip -r -FS ./ai2fumo.zip src/`.)
-3. Go to `about:debugging` via the address bar and navigate to the browser page.
-4. Within the "Temporary Extensions" section, click "Load Temporary Add-on..." Firefox will prompt you for a specific file. Select the ZIP file that you created in step 2.
+2. Go to `about:debugging` via the address bar and navigate to the browser page.
+3. Within the "Temporary Extensions" section, click "Load Temporary Add-on..." Firefox will prompt you for a specific file. Select the `manifest.json` file in the `src/` directory.
 
 ## Install on other browsers
 
