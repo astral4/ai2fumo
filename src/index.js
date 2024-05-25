@@ -6,13 +6,13 @@ const { body } = document;
 
 if (body) {
     let terms = {
-        "AI": "Fumo",
+        "\bAI\b": "Fumo",
         "artificial intelligence": "Fumo",
         "Artificial Intelligence": "Fumo",
         "an AI": "a Fumo",
         "an artificial intelligence": "a Fumo",
         "an Artificial Intelligence": "a Fumo",
-        "ML": "Fumo",
+        "\bML\b": "Fumo",
         "machine learning": "Fumo",
         "Machine Learning": "Fumo",
         "an ML": "a Fumo",
@@ -20,7 +20,7 @@ if (body) {
         "stable diffusion": "stable diffumo",
         "Stable Diffusion": "Stable Diffumo",
         "transformer": "transfumo",
-        "LLM": "LLF",
+        "\bLLM\b": "LLF",
         "language model": "language Fumo",
         "Language Model": "Language Fumo",
         "chatbot": "fumobot",
@@ -30,7 +30,7 @@ if (body) {
         "Anthropic": "FumoCo",
         "Google": "Fumogle",
         "Microsoft": "Fumosoft",
-        "AGI": "Cirno",
+        "\bAGI\b": "Cirno",
         "artificial general intelligence": "Cirno",
         "Artificial General Intelligence": "Cirno",
     };
